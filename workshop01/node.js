@@ -2,7 +2,7 @@ console.log("Hello World");
 const http = require("http");
 const fs = require('fs').promises;
 const host = 'localhost';
-const port = 8000;
+const port = 3000;
 const requestListener = function (req, res) {
     fs.readFile(__dirname + "/index.html")
         .then(contents => {
